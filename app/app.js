@@ -12,6 +12,8 @@ input.addEventListener("keypress", function (event) {
 function addTask() {
     taskId++
     const newTask = document.createElement('div')
+
+    //adds the div to contain to do text
     newTask.classList.add('task-class', 'hover:ring-1', 'ring-pink-500', 'bg-zinc-700', 'h-16', 'w-5/5', 'flex', 'items-center', 'justify-between', 'p-4', 'rounded-md', 'my-2', 'duration-300', 'ease-in-out')
     newTask.id = `task-${taskId}`;
 
