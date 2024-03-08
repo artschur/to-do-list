@@ -627,6 +627,18 @@ video {
   width: 66.666667%;
 }
 
+.grid-cols-12 {
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.grid-cols-8 {
+  grid-template-columns: repeat(8, minmax(0, 1fr));
+}
+
 .items-end {
   align-items: flex-end;
 }
@@ -645,6 +657,10 @@ video {
 
 .justify-evenly {
   justify-content: space-evenly;
+}
+
+.text-wrap {
+  text-wrap: wrap;
 }
 
 .rounded-2xl {
@@ -711,8 +727,8 @@ video {
   line-height: 2.5rem;
 }
 
-.text-xl {
-  font-size: 1.25rem;
+.text-lg {
+  font-size: 1.125rem;
   line-height: 1.75rem;
 }
 
@@ -806,6 +822,18 @@ input:focus{
   text-wrap: wrap !important;
 }
 
+.task-class {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+}
+
+.task-text {
+  max-width: 70%;
+  /* Adjust this value according to your layout */
+  overflow-wrap: break-word;
+}
+
 .hover\:bg-zinc-500:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(113 113 122 / var(--tw-bg-opacity));
@@ -857,3 +885,4 @@ input:focus{
     padding: 2rem;
   }
 }
+
