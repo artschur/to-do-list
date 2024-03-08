@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+    </style>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-do</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="/src/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <section class="flex items-end justify-center bg-zinc-900 h-screen">
+      <div
+        class="bg-zinc-800 rounded-2xl w-11/12 md:w-8/12 m-4 mt-12 p-0 duration-700 ease-in-out"
+        id="card"
+      >
+        <h1
+          class="text-zinc-200 py-5 ps-5 md:p-8 text-4xl mt-2 active:font-mono"
+        >
+          My to-do List📝
+        </h1>
+        <div
+          id="new-task"
+          class="flex items-center md:justify-start justify-evenly duration-700 ease-in-out p-4"
+        >
+          <input
+            type="text"
+            id="text-input"
+            class="md:mx-5 py-2 rounded-md text-zinc-300 bg-zinc-700 px-2 w-8/12 duration-300 hover:ring-1 ring-pink-500 ease-in-out focus:bg-transparent focus:ring-pink-500"
+            placeholder="Type here..."
+          />
+          <button
+            class="bg-zinc-700 text-zinc-300 px-3 py-2 w-4/12 ms-2 rounded-md hover:ring-1 ring-pink-500 focus:bg-transparent duration-300"
+            id="addButton"
+            onclick="addTask()"
+          >
+            Add task
+          </button>
+        </div>
+
+        <div id="task-container" class="m-5">
+          <ul id="task-ul"></ul>
+        </div>
+      </div>
+    </section>
+
+    <script src="/app/app.js"></script>
+  </body>
+</html>
