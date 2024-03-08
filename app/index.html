@@ -12,28 +12,28 @@
     <link href="/src/output.css" rel="stylesheet" />
   </head>
   <body>
-    <section class="flex items-end justify-center bg-zinc-900 h-screen">
+    <section class="flex items-end justify-center h-screen bg-zinc-900">
       <div
-        class="bg-zinc-800 rounded-2xl w-11/12 md:w-8/12 m-4 mt-12 p-0 duration-700 ease-in-out"
+        class="w-11/12 p-3 m-5 mt-12 duration-700 ease-in-out bg-zinc-800 rounded-2xl md:w-8/12"
         id="card"
       >
         <h1
-          class="text-zinc-200 py-5 ps-5 md:p-8 text-4xl mt-2 active:font-mono"
+          class="py-5 mt-2 text-4xl text-zinc-200 ps-5 md:p-8 active:font-mono"
         >
           My to-do List📝
         </h1>
         <div
           id="new-task"
-          class="flex items-center md:justify-start justify-evenly duration-700 ease-in-out p-4"
+          class="flex items-center p-5 duration-700 ease-in-out md:justify-start justify-evenly"
         >
           <input
             type="text"
             id="text-input"
-            class="md:mx-5 py-2 rounded-md text-zinc-300 bg-zinc-700 px-2 w-8/12 duration-300 hover:ring-1 ring-pink-500 ease-in-out focus:bg-transparent focus:ring-pink-500"
+            class="w-8/12 px-2 py-2 duration-300 ease-in-out rounded-md md:mx-5 text-zinc-300 bg-zinc-700 hover:ring-1 ring-pink-500 focus:bg-transparent focus:ring-pink-500"
             placeholder="Type here..."
           />
           <button
-            class="bg-zinc-700 text-zinc-300 px-3 py-2 w-4/12 ms-2 rounded-md hover:ring-1 ring-pink-500 focus:bg-transparent duration-300"
+            class="w-4/12 px-3 py-2 duration-300 rounded-md bg-zinc-700 text-zinc-300 ms-2 hover:ring-1 ring-pink-500 focus:bg-transparent"
             id="addButton"
             onclick="addTask()"
           >

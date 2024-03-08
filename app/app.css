@@ -40,3 +40,8 @@ body{
   input:focus{
     outline: none;
     }
+
+  .deletebtn{
+  margin-left: auto;
+  }
+
