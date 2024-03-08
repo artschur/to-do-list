@@ -16,7 +16,7 @@ function addTask() {
 
 
     const newTask = document.createElement('div');
-    newTask.classList.add('task-class', 'hover:ring-1', 'ring-pink-500', 'bg-zinc-700', 'h-16', 'w-5/5', 'flex', 'items-center', 'justify-between', 'p-4', 'rounded-md', 'my-2', 'duration-300', 'ease-in-out');
+    newTask.classList.add('task-class', 'hover:ring-1', 'ring-pink-500', 'bg-zinc-700', 'min-h-16', 'w-5/5', 'flex', 'items-center', 'justify-between', 'p-4', 'rounded-md', 'my-2', 'duration-300', 'ease-in-out');
     newTask.id = `task-${taskId}`;
 
     let taskText = document.getElementById('text-input').value;

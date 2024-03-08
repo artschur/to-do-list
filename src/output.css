@@ -587,8 +587,8 @@ video {
   margin-bottom: 0.5rem;
 }
 
-.ml-6 {
-  margin-left: 1.5rem;
+.ml-3 {
+  margin-left: 0.75rem;
 }
 
 .ms-2 {
@@ -603,24 +603,16 @@ video {
   margin-top: 0.5rem;
 }
 
-.ml-2 {
-  margin-left: 0.5rem;
-}
-
-.ml-3 {
-  margin-left: 0.75rem;
-}
-
 .flex {
   display: flex;
 }
 
-.h-16 {
-  height: 4rem;
-}
-
 .h-screen {
   height: 100vh;
+}
+
+.min-h-16 {
+  min-height: 4rem;
 }
 
 .w-11\/12 {
@@ -810,6 +802,10 @@ input:focus{
   margin-left: auto;
 }
 
+.task-classs{
+  text-wrap: wrap !important;
+}
+
 .hover\:bg-zinc-500:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(113 113 122 / var(--tw-bg-opacity));
@@ -861,4 +857,3 @@ input:focus{
     padding: 2rem;
   }
 }
-

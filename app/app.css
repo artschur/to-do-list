@@ -45,3 +45,6 @@ body{
   margin-left: auto;
   }
 
+.task-classs{
+  text-wrap: wrap !important;
+}
